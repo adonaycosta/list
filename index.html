@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <title>List</title>
+</head>
+<body>
+  <div class="logo">
+    <a href="#">
+      <img src="assets/logo.svg" alt="">
+      <h1>quicklist</h1>
+    </a>
+  </div>
+
+  <div class="title">
+    <a href="#" id="back">
+      <img src="assets/back.svg" alt="">
+      <span>Voltar</span>
+   </a>
+    <h1>Compras da semana</h1>
+  </div>
+
+  <form>
+    <label for="item"></label>
+    <input type="text" name="add-item" id="add-item" placeholder="Adicione um novo item" required>
+
+    <button type="submit" id="addItemButton">
+      Adicionar item
+    </button>
+  </form>
+
+  <ul class="list">
+
+  </ul>
+
+  <div id="removeAlert">
+    <img src="assets/alert.svg" alt="">
+    <span>O item foi removido da lista</span>
+    <img src="assets/close.svg" id="closeAlert">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
